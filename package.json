@@ -1,0 +1,16 @@
+{
+  "name": "playwright-example",
+  "version": "1.0.0",
+  "description": "Playwright Example",
+  "main": "index.js",
+  "repository": "git@github.com:guilhermedelemos/playwright-example.git",
+  "author": "Guilherme de Lemos <guilherme_lemos@trimble.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test --browser=all"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.14.1"
+  }
+}
