@@ -10,5 +10,7 @@ jobs:
           node-version: '14'
       - name: Install operating system dependencies
         run: npx playwright install-deps
+      - name: Install project dependencies
+        run: yarn install --production
       - name: Run your tests
         run: yarn run test
