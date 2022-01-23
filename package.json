@@ -1,16 +1,23 @@
 {
   "name": "playwright-example",
   "version": "1.0.0",
-  "description": "Playwright Example",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:guilhermedelemos/playwright-example.git",
-  "author": "Guilherme de Lemos <guilherme_lemos@trimble.com>",
-  "license": "MIT",
-  "private": true,
   "scripts": {
-    "test": "npx playwright test --browser=all"
+    "test": "playwright test"
   },
-  "dependencies": {
-    "@playwright/test": "^1.14.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermedelemos/playwright-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilhermedelemos/playwright-example/issues"
+  },
+  "homepage": "https://github.com/guilhermedelemos/playwright-example#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.18.0"
   }
 }
