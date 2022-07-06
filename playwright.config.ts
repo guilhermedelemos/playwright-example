@@ -91,7 +91,7 @@ const config: PlaywrightTestConfig = {
       },
     },
 
-    /* Test against mobile viewports. */
+    // /* Test against mobile viewports. */
     {
       name: 'Mobile Chrome',
       use: {
@@ -112,16 +112,19 @@ const config: PlaywrightTestConfig = {
     //     channel: 'msedge',
     //   },
     // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: {
-    //     channel: 'chrome',
-    //   },
-    // },
+    {
+      name: 'Google Chrome',
+      use: {
+        channel: 'chrome',
+      },
+    },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   outputDir: 'test-results/artifacts/',
+
+  globalSetup: require.resolve('./hooks/global-setup.ts'),
+  globalTeardown: require.resolve('./hooks/global-teardown.ts'),
 
   /* Run your local dev server before starting the tests */
   // webServer: {
